@@ -29,6 +29,7 @@ public class UserController {
         user.setPassword("1234");
         return user;
     }
+
     @RequestMapping(value = "user12")
     public User modifyUser() {
         User user = new User();
@@ -40,14 +41,5 @@ public class UserController {
         return user;
     }
 
-    @RequestMapping(value = "user1")
-    public User deleteUser() {
-        User user = new User();
-        user.setName("Duvan");
-        user.setSurname("Marin");
-        user.setEmail("mail@duvan.com");
-        user.setPhone("3208856258");
-        user.setPassword("1234");
-        return user;
-    }
+
 }
